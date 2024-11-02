@@ -16,7 +16,16 @@ public class useUltimate : MonoBehaviour
         if (buttonImage != null && Ultimate.Length > selectUltimate)
         {
             // 텍스처 할당
-            buttonImage.sprite = Ultimate[selectUltimate];
+            //buttonImage.sprite = Ultimate[selectUltimate];
+            Debug.Log(PassiveManager.Instance.SelectedPassive.imgSource);
+            Texture2D texture = Resources.Load<Texture2D>(PassiveManager.Instance.SelectedPassive.imgSource);
+
+            if (texture != null)
+            {
+                // Texture2D를 Sprite로 변환
+                Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                buttonImage.sprite = newSprite;
+            }
         }
         else
         {

@@ -24,16 +24,16 @@ public class LobbyManager : MonoBehaviour
     private TextMeshProUGUI speedNum;
     private void Awake()
     {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            if (Instance != this)
-                Destroy(this.gameObject);
-        }
+        //if(Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    if (Instance != this)
+        //        Destroy(this.gameObject);
+        //}
         setPassiveBtn();
     }
     void Start()

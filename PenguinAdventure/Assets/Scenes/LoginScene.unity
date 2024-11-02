@@ -626,8 +626,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 90072688}
-        m_TargetAssemblyTypeName: GoNextScene, Assembly-CSharp
+      - m_Target: {fileID: 1782662461}
+        m_TargetAssemblyTypeName: TextLimit, Assembly-CSharp
         m_MethodName: buttonClick
         m_Mode: 1
         m_Arguments:

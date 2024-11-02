@@ -4,7 +4,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using TMPro;
-
+using PlayerInfoManager;
+using UnityEngine.SceneManagement;
 public class TextLimit : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class TextLimit : MonoBehaviour
     public Sprite image2;
     private Image buttonImage;
 
+    int nowinputlen = 0;
     private void Start()
     {
 
@@ -30,6 +32,7 @@ public class TextLimit : MonoBehaviour
     }
     private void OnTextChanged(string text)
     {
+        nowinputlen = text.Length;
         if (text.Length == 0)
         {
             buttonImage.raycastTarget = false;
@@ -54,6 +57,15 @@ public class TextLimit : MonoBehaviour
         {
             // 경고 메시지 비활성화
             warningMessage.gameObject.SetActive(false);
+        }
+    }
+    public void buttonClick()
+    {
+        if(nowinputlen != 0)
+        {
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("LobbyScene");
+            PlayerManager.Instance.myPlayer._name = inputfield.text;
+
         }
     }
 }

@@ -355,6 +355,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/GameManager.cs"
 "Assets/Script/Lobby/LobbyManager.cs"
+"Assets/Script/Lobby/NextScene.cs"
 "Assets/Script/Lobby/Passive.cs"
 "Assets/Script/Lobby/PassiveBtnGroup.cs"
 "Assets/Script/Lobby/PassiveInfo.cs"

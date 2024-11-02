@@ -42,7 +42,7 @@ public class PassiveBtnGroup : MonoBehaviour
     void LoadSettings()
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("PassiveInfo");
-
+        Debug.Log(jsonFile);
         if (jsonFile != null)
         {
             string wrappedArray = WrapArray(jsonFile.text);

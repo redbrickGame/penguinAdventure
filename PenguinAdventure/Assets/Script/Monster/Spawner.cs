@@ -12,10 +12,6 @@ public class Spawner : MonoBehaviour
         {
             Debug.LogError("GameManager.Instance가 null입니다!");
         }
-        else
-        {
-            Debug.Log("GameManager.Instance가 정상적으로 설정되었습니다.");
-        }
     }
     private void Update()
     {
