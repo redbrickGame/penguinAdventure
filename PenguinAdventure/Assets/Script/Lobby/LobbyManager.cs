@@ -34,6 +34,7 @@ public class LobbyManager : MonoBehaviour
         //    if (Instance != this)
         //        Destroy(this.gameObject);
         //}
+
         setPassiveBtn();
     }
     void Start()
@@ -55,6 +56,7 @@ public class LobbyManager : MonoBehaviour
     }
     void LateUpdate()
     {
+        Debug.Log(PlayerManager.Instance.myPlayer._hp);
         healthNum.text = PlayerManager.Instance.myPlayer._hp.ToString();
         defenseNum.text = PlayerManager.Instance.myPlayer._defense.ToString();
         damageNum.text = PlayerManager.Instance.myPlayer._damage.ToString();
