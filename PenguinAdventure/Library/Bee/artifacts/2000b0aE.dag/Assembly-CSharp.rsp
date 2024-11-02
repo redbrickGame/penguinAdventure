@@ -308,6 +308,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/CFXRRuntime.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/KinoBloom.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/ToonyColorsPro.Demo.Editor.ref.dll"
+-r:"Library/Bee/artifacts/2000b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -335,6 +336,14 @@
 "Assets/Script/Lobby/Passive.cs"
 "Assets/Script/Lobby/RankingBtn.cs"
 "Assets/Script/Lobby/RightButtonGroup.cs"
+"Assets/Script/play/gameoverManager.cs"
+"Assets/Script/play/timerManager.cs"
+"Assets/Script/play/UI/experienceSlider.cs"
+"Assets/Script/play/UI/pauseBtn.cs"
+"Assets/Script/play/UI/randomUltimate.cs"
+"Assets/Script/play/UI/SkillPanelController.cs"
+"Assets/Script/play/UI/ultimateTimer.cs"
+"Assets/Script/play/useUltimate.cs"
 "Assets/Script/Player/PlayerManager.cs"
 -langversion:9.0
 /deterministic
