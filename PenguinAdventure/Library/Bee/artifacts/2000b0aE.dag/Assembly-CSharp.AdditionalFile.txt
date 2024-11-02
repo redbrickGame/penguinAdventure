@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-E:\study\gamejam\penguinAdventure\PenguinAdventure
-=======
 E:\desktop\0000\penguinAdventure\PenguinAdventure
->>>>>>> b1f7af332ef13bc30267b796a2cfd7a2a17d01ed

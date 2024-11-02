@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 27314743}
   - component: {fileID: 27314745}
   - component: {fileID: 27314744}
+  - component: {fileID: 27314746}
   m_Layer: 5
   m_Name: SelectedSkill2
   m_TagString: Untagged
@@ -269,6 +270,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27314742}
   m_CullTransparentMesh: 1
+--- !u!114 &27314746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27314742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &34246341
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +565,7 @@ GameObject:
   - component: {fileID: 95554836}
   - component: {fileID: 95554838}
   - component: {fileID: 95554837}
+  - component: {fileID: 95554839}
   m_Layer: 5
   m_Name: SelectedSkill5
   m_TagString: Untagged
@@ -613,6 +629,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95554835}
   m_CullTransparentMesh: 1
+--- !u!114 &95554839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95554835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &107885869
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +730,7 @@ GameObject:
   - component: {fileID: 115035879}
   - component: {fileID: 115035881}
   - component: {fileID: 115035880}
+  - component: {fileID: 115035882}
   m_Layer: 5
   m_Name: SelectedSkill1
   m_TagString: Untagged
@@ -763,6 +794,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115035878}
   m_CullTransparentMesh: 1
+--- !u!114 &115035882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115035878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &115737897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,6 +2382,7 @@ GameObject:
   - component: {fileID: 699872239}
   - component: {fileID: 699872238}
   - component: {fileID: 699872237}
+  - component: {fileID: 699872240}
   m_Layer: 5
   m_Name: SelectedSkill2
   m_TagString: Untagged
@@ -2398,7 +2444,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2418,6 +2464,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662975729}
+        m_TargetAssemblyTypeName: skillSet, Assembly-CSharp
+        m_MethodName: selectedListSkill
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 699872235}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2461,6 +2519,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699872235}
   m_CullTransparentMesh: 1
+--- !u!114 &699872240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699872235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,6 +3042,7 @@ GameObject:
   - component: {fileID: 757498659}
   - component: {fileID: 757498661}
   - component: {fileID: 757498660}
+  - component: {fileID: 757498662}
   m_Layer: 5
   m_Name: SelectedSkill4
   m_TagString: Untagged
@@ -3033,6 +3106,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757498658}
   m_CullTransparentMesh: 1
+--- !u!114 &757498662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757498658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &774638727
 GameObject:
   m_ObjectHideFlags: 0
@@ -3108,6 +3195,7 @@ GameObject:
   - component: {fileID: 800266592}
   - component: {fileID: 800266591}
   - component: {fileID: 800266590}
+  - component: {fileID: 800266593}
   m_Layer: 5
   m_Name: SelectedSkill3
   m_TagString: Untagged
@@ -3169,7 +3257,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -3189,6 +3277,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662975729}
+        m_TargetAssemblyTypeName: skillSet, Assembly-CSharp
+        m_MethodName: selectedListSkill
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 800266588}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3232,6 +3332,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800266588}
   m_CullTransparentMesh: 1
+--- !u!114 &800266593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800266588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &815225248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,6 +4464,7 @@ GameObject:
   - component: {fileID: 1122776071}
   - component: {fileID: 1122776070}
   - component: {fileID: 1122776073}
+  - component: {fileID: 1122776074}
   m_Layer: 0
   m_Name: GameManage
   m_TagString: Untagged
@@ -4418,6 +4533,71 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8a99e92c819fde846b5253b70d1f2dd5, type: 3}
   - {fileID: 21300000, guid: bf744d9d3f72bed4e83a4e23b267aa74, type: 3}
   ultimateDelayObject: {fileID: 203908424}
+--- !u!114 &1122776074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122776069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6c80efcedaeb84d9a8fefcc04f7c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillList: {fileID: 1304324006}
+  skillViews:
+  - skillBtn: {fileID: 2081055275}
+    skillIcon: {fileID: 974149745}
+    skillName: {fileID: 1399580821}
+    skillExplane: {fileID: 338951578}
+  - skillBtn: {fileID: 699872237}
+    skillIcon: {fileID: 519680147}
+    skillName: {fileID: 1551271149}
+    skillExplane: {fileID: 1600932537}
+  - skillBtn: {fileID: 800266590}
+    skillIcon: {fileID: 215601816}
+    skillName: {fileID: 1379542143}
+    skillExplane: {fileID: 1927301622}
+  skillItems:
+  - skillIcon: {fileID: 21300000, guid: 39f79ec0c46450e4eaf33b856561cccd, type: 3}
+    skillName: "\uCE5C\uAD6C\uC57C \uB3C4\uC640\uC918!"
+    skillExplane: "\uCE5C\uAD6C \uD3AD\uADC4\uC774 \uB098\uC640 \uC8FC\uBCC0\uC744
+      \uC2AC\uB77C\uC774\uB529\uD558\uBA70 \uB2E4\uB2CC\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 99ad37a211b99a74abcd5f52c5837f68, type: 3}
+    skillName: "\uC815\uC5B4\uB9AC \uACF5\uACA9!"
+    skillExplane: "\uBE44\uC0C1\uC2DD\uB7C9\uC778 \uC815\uC5B4\uB9AC\uB97C \uC0AC\uC6A9\uD574
+      \uC8FC\uBCC0\uC744 \uACF5\uACA9\uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 35752524eb451c34f8952be9ea826e55, type: 3}
+    skillName: "\uC5BC\uC74C\uB3C4\uC7A5 \uCF85!"
+    skillExplane: "\uC77C\uC815 \uBC94\uC704\uC758 \uC5BC\uC74C \uBC94\uC704 \uACF5\uACA9\uC744
+      \uC785\uD78C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 5bc87a8ba4548a84e80a29a216f89f2e, type: 3}
+    skillName: "\uBB3C\uBC29\uC6B8 \uC3D8\uC544\uB0B4\uAE30!"
+    skillExplane: "\uCE68 \uC544\uB2D9\uB2C8\uB2E4. \uC8FC\uBCC0\uC758 \uBB3C\uC744
+      \uB354 \uB9CE\uC774 \uC3D8\uC544\uB0B8\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 4fb44c0b07259be4798b65e33ac30466, type: 3}
+    skillName: "'ICE ZONE' \uC774\uB77C\uB294 \uAC83\uC774\uB2E4"
+    skillExplane: "\uC8FC\uBCC0\uC73C\uB85C \uC77C\uC815 \uB370\uBBF8\uC9C0\uB97C
+      \uC785\uD788\uB294 \uAD6C\uC5ED\uC744 \uC0DD\uC131\uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 8c3d1ec4bd396b8499f408298243826e, type: 3}
+    skillName: "\uD0DC\uC591\uAD11 \uC5D0\uB108\uC9C0"
+    skillExplane: "\uD0DC\uC591\uC758 \uC5D0\uB108\uC9C0\uB97C \uBAA8\uC544 \uAD11\uBC94\uC704\uC758
+      \uC6D0\uAC70\uB9AC \uACF5\uACA9\uC744 \uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 73d0bd8b84aeaf44db8703fd4f548fbc, type: 3}
+    skillName: "\uBC94\uC704\uC2A4\uD0AC \uBC94\uC704 \uC99D\uAC00"
+    skillExplane: "\uBAA8\uB4E0 \uBC94\uC704 \uC2A4\uD0AC\uC758 \uBC94\uC704\uAC00
+      \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 1d13a10c4d477d04d989dbc9140e34da, type: 3}
+    skillName: "\uC6D0\uAC70\uB9AC \uACF5\uACA9 \uAC1C\uC218 \uC99D\uAC00"
+    skillExplane: "\uBAA8\uB4E0 \uC6D0\uAC70\uB9AC \uACF5\uACA9 \uAC1C\uC218\uAC00
+      \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 0565208e2a65dd445aca62e4a0ba30e7, type: 3}
+    skillName: "\uC804\uCCB4 \uCCB4\uB825 \uC99D\uAC00"
+    skillExplane: "\uC804\uCCB4 \uCCB4\uB825\uC774 \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
+  - skillIcon: {fileID: 21300000, guid: 04814e721b0915e428de30fa0eea5377, type: 3}
+    skillName: "\uAE30\uBCF8 \uC18D\uB3C4 \uC99D\uAC00"
+    skillExplane: "\uAE30\uBCF8 \uC774\uB3D9\uC18D\uB3C4\uAC00 \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
 --- !u!1 &1164994800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5999,6 +6179,7 @@ GameObject:
   - component: {fileID: 1662975726}
   - component: {fileID: 1662975728}
   - component: {fileID: 1662975727}
+  - component: {fileID: 1662975729}
   m_Layer: 5
   m_Name: SelectedSkillView
   m_TagString: Untagged
@@ -6067,6 +6248,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662975725}
   m_CullTransparentMesh: 1
+--- !u!114 &1662975729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662975725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5882c1e9435a1f445a3d3f959a5329f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1683110958
 GameObject:
   m_ObjectHideFlags: 0
@@ -6332,7 +6525,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: mainScene
+          m_StringArgument: LobbyScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1714001368
@@ -6893,6 +7086,7 @@ GameObject:
   - component: {fileID: 2081055277}
   - component: {fileID: 2081055276}
   - component: {fileID: 2081055275}
+  - component: {fileID: 2081055278}
   m_Layer: 5
   m_Name: SelectedSkill1
   m_TagString: Untagged
@@ -6954,7 +7148,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: 62ca36fdc464f0a4bbc2f7519599f93b, type: 3}
+    m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -6974,6 +7168,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1662975729}
+        m_TargetAssemblyTypeName: skillSet, Assembly-CSharp
+        m_MethodName: selectedListSkill
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2081055273}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7017,6 +7223,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081055273}
   m_CullTransparentMesh: 1
+--- !u!114 &2081055278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081055273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0
 --- !u!1 &2100698189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7028,6 +7248,7 @@ GameObject:
   - component: {fileID: 2100698190}
   - component: {fileID: 2100698192}
   - component: {fileID: 2100698191}
+  - component: {fileID: 2100698193}
   m_Layer: 5
   m_Name: SelectedSkill3
   m_TagString: Untagged
@@ -7091,3 +7312,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100698189}
   m_CullTransparentMesh: 1
+--- !u!114 &2100698193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100698189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d98a30a2f9b414d96c2a0b4af1e401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkillName: 
+  level: 0

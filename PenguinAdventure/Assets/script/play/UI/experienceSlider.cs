@@ -17,6 +17,7 @@ public class experienceSlider : MonoBehaviour
         if (progressSlider.value >= 100)
         {
             SelectSkillUI.SetActive(true);  // 패널 활성화
+            Time.timeScale = 0f;       // 게임 일시 정지
         }
     }
 
@@ -24,5 +25,6 @@ public class experienceSlider : MonoBehaviour
     {
         SelectSkillUI.SetActive(false);  // 시작 시 패널 비활성화
         progressSlider.value = 0;
+        Time.timeScale = 1f;       // 게임 재개
     }
 }
