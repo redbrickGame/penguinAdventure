@@ -63,11 +63,11 @@ public class LobbyManager : MonoBehaviour
         {
             if ((float)PlayerManager.Instance.myPlayer._hp / 100 >= 0)
                 healthBar.localScale = new Vector3((float)PlayerManager.Instance.myPlayer._hp / 100, 1, 1);
-            if ((float)PlayerManager.Instance.myPlayer._defense / 100 >= 0)
+            if ((float)PlayerManager.Instance.myPlayer._hp / 100 >= 0)
                 defenseBar.localScale = new Vector3((float)PlayerManager.Instance.myPlayer._defense / 100, 1, 1);
-            if ((float)PlayerManager.Instance.myPlayer._damage / 100 >= 0)
+            if ((float)PlayerManager.Instance.myPlayer._hp / 100 >= 0)
                 damageBar.localScale = new Vector3((float)PlayerManager.Instance.myPlayer._damage / 100, 1, 1);
-            if ((float)PlayerManager.Instance.myPlayer._moveSpeed / 100 >= 0)
+            if ((float)PlayerManager.Instance.myPlayer._hp / 100 >= 0)
                 speedBar.localScale = new Vector3((float)PlayerManager.Instance.myPlayer._moveSpeed / 100, 1, 1);
         }
         //health..text = PlayerManager.Instance.myCharacter._hp + " / " + "100";

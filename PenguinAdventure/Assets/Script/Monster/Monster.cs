@@ -36,6 +36,6 @@ public class Monster : MonoBehaviour
     }
     private void OnEnable()
     {
-        target = GameManager.Instance.player.GetComponent<Rigidbody2D>();
+        // target = GameManager.Instance.player.GetComponent<Rigidbody2D>();
     }
 }
