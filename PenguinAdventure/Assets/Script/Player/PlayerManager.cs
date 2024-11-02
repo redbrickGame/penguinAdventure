@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 namespace PlayerInfoManager
 {
     public struct PlayerInfo
     {
         public int _hp;
-        public int _attack;
+        public int _damage;
         public int _defense;
         public int _moveSpeed;
         public int _money;
@@ -21,7 +20,7 @@ namespace PlayerInfoManager
         {
             get
             {
-                if(Instance == null)
+                if(instance == null)
                 {
                     instance = new PlayerManager();
 
@@ -32,11 +31,12 @@ namespace PlayerInfoManager
         public void InitializePlayer()
         {
             myPlayer._hp = 100;
-            myPlayer._attack = 10;
+            myPlayer._damage = 10;
             myPlayer._defense = 10;
             myPlayer._moveSpeed = 10;
             myPlayer._money = 0;
         }
+
     }
 
 }

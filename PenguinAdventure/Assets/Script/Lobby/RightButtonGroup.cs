@@ -12,25 +12,24 @@ public class RightButtonGroup : MonoBehaviour
 
     public void SlideToPanel12()
     {
-        panel1.DOAnchorPos(new Vector2(-Screen.width, 0), slideDuration).SetEase(Ease.OutExpo);
+        panel1.DOAnchorPos(new Vector2(-Screen.width*2, 0), slideDuration).SetEase(Ease.OutExpo);
         panel2.DOAnchorPos(new Vector2(0, 0), slideDuration).SetEase(Ease.OutExpo);
     }
     public void SlideToPanel13()
     {
-        panel1.DOAnchorPos(new Vector2(Screen.width, 0), slideDuration).SetEase(Ease.OutExpo);
+        panel1.DOAnchorPos(new Vector2(Screen.width*2, 0), slideDuration).SetEase(Ease.OutExpo);
         panel3.DOAnchorPos(new Vector2(0, 0), slideDuration).SetEase(Ease.OutExpo);
     }
     public void SlideToPane31()
     {
-        Debug.Log("???");
         panel1.DOAnchorPos(new Vector2(0, 0), slideDuration).SetEase(Ease.OutExpo);
-        panel3.DOAnchorPos(new Vector2(-Screen.width, 0), slideDuration).SetEase(Ease.OutExpo);
+        panel3.DOAnchorPos(new Vector2(-Screen.width*2, 0), slideDuration).SetEase(Ease.OutExpo);
     }
 
     // 1번 화면으로 다시 슬라이드하는 함수
     public void SlideToPanel21()
     {
         panel1.DOAnchorPos(new Vector2(0, 0), slideDuration).SetEase(Ease.OutExpo);
-        panel2.DOAnchorPos(new Vector2(Screen.width, 0), slideDuration).SetEase(Ease.OutExpo);
+        panel2.DOAnchorPos(new Vector2(Screen.width*2, 0), slideDuration).SetEase(Ease.OutExpo);
     }
 }
