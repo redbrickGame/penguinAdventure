@@ -45,6 +45,7 @@ public class skillManage : MonoBehaviour
     public GameObject skillList;
     public List<skillView> skillViews;
     public List<inputSkill> skillItems;
+    public Sprite sprite;
     List<string> selectMySkill = new List<string>();
     List<inputSkill> skillList_select = new List<inputSkill>();
     bool Once = false;
@@ -55,7 +56,7 @@ public class skillManage : MonoBehaviour
     }
     public void setSkill()
     {
-        Debug.Log(Once);
+        // Debug.Log(Once);
 
         List<inputSkill> randomNumbers = RandomSample.GetRandomElements(skillList_select, Math.Min(3, skillList_select.Count));
         int i = 0;
@@ -80,6 +81,7 @@ public class skillManage : MonoBehaviour
                 GameObject Btnchild = skillViews[i].skillBtn.transform.GetChild(j).gameObject;
                 Btnchild.gameObject.SetActive(false);
                 skillViews[i].skillBtn.interactable = false;
+                skillViews[i].skillBtn.GetComponent<Image>().sprite = sprite;
             }
 
             i++;
