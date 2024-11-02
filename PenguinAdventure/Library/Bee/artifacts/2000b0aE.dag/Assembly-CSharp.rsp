@@ -340,6 +340,8 @@
 "Assets/Script/Lobby/PassiveManager.cs"
 "Assets/Script/Lobby/RankingBtn.cs"
 "Assets/Script/Lobby/RightButtonGroup.cs"
+"Assets/Script/Login/GoNextScene.cs"
+"Assets/Script/Login/TextLimit.cs"
 "Assets/Script/Monster/Monster.cs"
 "Assets/Script/Monster/PoolManager.cs"
 "Assets/Script/Monster/Spawner.cs"

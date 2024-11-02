@@ -5,6 +5,7 @@ namespace PlayerInfoManager
 {
     public struct PlayerInfo
     {
+        public string _name;
         public int _hp;
         public int _damage;
         public int _defense;
