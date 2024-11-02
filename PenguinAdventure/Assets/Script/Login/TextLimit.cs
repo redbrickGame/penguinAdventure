@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using PlayerInfoManager;
 using UnityEngine.SceneManagement;
+
 public class TextLimit : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -19,7 +20,8 @@ public class TextLimit : MonoBehaviour
     public Sprite image2;
     private Image buttonImage;
 
-    int nowinputlen = 0;
+    int wordlen = 0;
+
     private void Start()
     {
 
@@ -32,7 +34,9 @@ public class TextLimit : MonoBehaviour
     }
     private void OnTextChanged(string text)
     {
-        nowinputlen = text.Length;
+
+        wordlen = text.Length;
+
         if (text.Length == 0)
         {
             buttonImage.raycastTarget = false;
@@ -61,10 +65,11 @@ public class TextLimit : MonoBehaviour
     }
     public void buttonClick()
     {
-        if(nowinputlen != 0)
+
+        if (wordlen != 0)
         {
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("LobbyScene");
-            PlayerManager.Instance.myPlayer._name = inputfield.text;
+             //PlayerManager.Instance.myPlayer._name = inputfield.text;
 
         }
     }
