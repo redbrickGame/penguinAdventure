@@ -25,6 +25,7 @@ public class PassiveBtnGroup : MonoBehaviour
         foreach (var ability in passiveList)
         {
             GameObject newButton = Instantiate(buttonPrefab, panel.transform);
+            newButton.name = ability.title;
             Passive p = newButton.GetComponent<Passive>();
 
             if (p != null)
@@ -45,13 +46,11 @@ public class PassiveBtnGroup : MonoBehaviour
         if (jsonFile != null)
         {
             string wrappedArray = WrapArray(jsonFile.text);
-            Debug.Log("JSON 텍스트 (감싸진 형태): " + wrappedArray);
 
             PassiveInfo[] abilitiesArray = JsonUtility.FromJson<PassiveArrayWrapper>(wrappedArray).passives;
 
             if (abilitiesArray != null)
             {
-                Debug.Log("파싱 성공: 총 " + abilitiesArray.Length + "개의 항목을 로드했습니다.");
                 passiveList.AddRange(abilitiesArray);
             }
             else
@@ -78,6 +77,6 @@ public class PassiveBtnGroup : MonoBehaviour
 
     private void OnPassiveButtonClick(PassiveInfo clickedPassive)
     {
-        PassiveManager.Instance.SetSelectedPassive(clickedPassive);
+       // PassiveManager.Instance.SetSelectedPassive(clickedPassive);
     }
 }

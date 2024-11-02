@@ -34,7 +34,6 @@ public class LobbyManager : MonoBehaviour
             if (Instance != this)
                 Destroy(this.gameObject);
         }
-        PlayerManager.Instance.InitializePlayer();
         setPassiveBtn();
     }
     void Start()

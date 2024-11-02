@@ -6,27 +6,67 @@ using UnityEngine.UI;
 public class Passive : MonoBehaviour
 {
     // Start is called before the first frame update
-    public string title = "";
-    public string discription = "";
-    public int nowLevel = 0;
-    public int limitLevel = 5;
-    public string imgSource = "";
+   
+    PassiveInfo thisPassiveInfo;
     public void SetData(PassiveInfo passiveData)
     {
-        title = passiveData.title;
-        discription = passiveData.discription;
-        nowLevel = passiveData.nowLevel;
-        limitLevel = passiveData.limitLevel;
-        imgSource = passiveData.imgSource;
+        thisPassiveInfo = passiveData;
 
-        Image imageComponent = this.GetComponent<Image>();
-
-        // Resources 폴더에서 경로에 해당하는 이미지를 불러옴
-        if (imageComponent != null && !string.IsNullOrEmpty(imgSource))
+        if(thisPassiveInfo.nowLevel==0)
         {
-            // imgSource에서 확장자 제외하고 불러옴 (예: "Images/myImage")
-            Sprite newSprite = Resources.Load<Sprite>(imgSource);
+            BtnIsActive(false);
+            ImageSet(false);
 
+        }
+        else
+        {
+            BtnIsActive(true);
+            ImageSet(true);
+        }
+
+    }
+    public void ClickPassive()
+    {
+        PassiveManager.Instance.SetSelectedPassive(thisPassiveInfo);
+    }
+    public void BtnIsActive(bool isActive)
+    {
+        Image buttonImage = this.GetComponent<Image>();
+        if (buttonImage != null)
+        {
+            if (isActive)
+            {
+                this.GetComponent<Button>().onClick.AddListener(ClickPassive);
+
+            }
+            else
+            {
+                this.GetComponent<Button>().onClick.AddListener(DisableClick);
+
+            }
+        }
+
+    }
+    void DisableClick() { }
+    public void ImageSet(bool isLevelNum)
+    {
+        Image imageComponent = this.GetComponent<Image>();
+        if (isLevelNum)
+        {
+            if (imageComponent != null && !string.IsNullOrEmpty(thisPassiveInfo.imgSource))
+            {
+                // imgSource에서 확장자 제외하고 불러옴 (예: "Images/myImage")
+                Sprite newSprite = Resources.Load<Sprite>(thisPassiveInfo.imgSource);
+
+                if (newSprite != null)
+                {
+                    imageComponent.sprite = newSprite;
+                }
+            }
+        }
+        else
+        {
+            Sprite newSprite = Resources.Load<Sprite>("Images/NotOpen");
             if (newSprite != null)
             {
                 imageComponent.sprite = newSprite;

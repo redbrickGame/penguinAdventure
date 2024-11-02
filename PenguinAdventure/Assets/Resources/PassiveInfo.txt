@@ -9,7 +9,7 @@
     {
         "title": "스피드 향상",
         "discription": "스피드가 빨라진다.",
-        "nowLevel": 0,
+        "nowLevel": 1,
         "limitLevel": 5,
         "imgSource": "Images/invincibility"
     },
@@ -21,6 +21,13 @@
         "imgSource": "Images/invincibility"
     },
     {
+        "title": "북극곰아 도와줘",
+        "discription": "몇초에 한번 펭귄친구를 도와줄 북극곰 등장",
+        "nowLevel": 0,
+        "limitLevel": 5,
+        "imgSource": "Images/invincibility"
+    },
+     {
         "title": "북극곰아 도와줘",
         "discription": "몇초에 한번 펭귄친구를 도와줄 북극곰 등장",
         "nowLevel": 0,
