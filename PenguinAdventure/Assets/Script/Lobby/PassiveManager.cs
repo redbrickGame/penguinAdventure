@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using PassiceInfoScript;
+using PlayerInfoManager;
 public class PassiveManager : MonoBehaviour
 {
     public static PassiveManager Instance { get; private set; }
 
-    public PassiveInfo SelectedPassive { get; private set; }
+    
     public TextMeshProUGUI passiveText;
     public TextMeshProUGUI passiveTextLevel;
     public TextMeshProUGUI passiveDiscription;
@@ -24,14 +25,16 @@ public class PassiveManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        SetSelectedPassive(PlayerManager.Instance.SelectedPassive);
     }
+
     public void SetSelectedPassive(PassiveInfo passiveInfo)
     {
-        SelectedPassive = passiveInfo;
-        passiveText.text = SelectedPassive.title;
-        passiveDiscription.text = SelectedPassive.discription;
-        passiveTextLevel.text = "LV"+ SelectedPassive.nowLevel;
-        Texture2D texture = Resources.Load<Texture2D>(SelectedPassive.imgSource);
+        PlayerManager.Instance.SelectedPassive = passiveInfo;
+        passiveText.text = PlayerManager.Instance.SelectedPassive.title;
+        passiveDiscription.text = PlayerManager.Instance.SelectedPassive.discription;
+        passiveTextLevel.text = "LV"+ PlayerManager.Instance.SelectedPassive.nowLevel;
+        Texture2D texture = Resources.Load<Texture2D>(PlayerManager.Instance.SelectedPassive.imgSource);
         if (texture != null)
         {
             passiveImg.texture = texture;

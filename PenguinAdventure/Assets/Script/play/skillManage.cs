@@ -9,16 +9,7 @@ using System; // LINQ 기능 사용을 위한 네임스페이스
 [System.Serializable] // Unity Inspector에서 표시되도록 직렬화
 public class inputSkill
 {
-    //스킬 데미지
-    //근거리, 광역, 원거리
-    //쓰게될 파티클
-
-
     private int skillLevel = 0;
-    public float ReuseTime = 1f;     //재사용 시간
-    public GameObject SkillImg;
-    public int passiveCount = 0;
-
     public Sprite skillIcon;
     public string skillName;
     public string skillExplane;
@@ -62,7 +53,6 @@ public class skillManage : MonoBehaviour
     private void Start()
     {
         skillList_select = skillItems;
-        SelectSkill(skillItems[3].skillName);
     }
     public void setSkill()
     {
@@ -195,38 +185,6 @@ public class skillManage : MonoBehaviour
             }
 
         }
-    }
-
-
-    //스킬 코루틴
-    //물방울 //passiveCount
-    public IEnumerator WaterDrop()
-    {
-        //ReuseTime
-        float ReuseTime = 1f;
-        float bulletSpeed = 10f; // 속도
-        GameObject player = GameObject.Find("PenguinPlayer");
-
-        inputSkill foundSkill = skillItems.Find(skill => skill.skillName == "물방울 쏘아내기!");
-
-        if (foundSkill != null)
-        {
-            while (true)
-            {
-
-                if (player != null)
-                {
-                    // if (player.transform.localScale)
-                    Debug.Log(0);
-                }
-
-                yield return new WaitForSeconds(ReuseTime);
-            }
-        }
-
-
-
-
     }
 
 }

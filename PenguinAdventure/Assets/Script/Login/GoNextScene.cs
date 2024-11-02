@@ -30,5 +30,5 @@ public class GoNextScene : MonoBehaviour
     {
         nameInput.SetActive(false);
     }
-
+   
 }

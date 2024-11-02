@@ -5,11 +5,14 @@ using PlayerInfoManager;
 public class Player : MonoBehaviour
 {
     public Vector2 inputVec;
-    public float speed;
     Rigidbody2D rigid;
+    public float speed = 1;
+    SpriteRenderer spriter;
+    // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        spriter = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -20,7 +23,14 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Vector2 nextVec = inputVec.normalized * speed*Time.deltaTime;
-        rigid.MovePosition(rigid.position+ nextVec);
+        Vector2 nextVec = inputVec.normalized * speed;
+        rigid.MovePosition(rigid.position + nextVec);
+    }
+    private void LateUpdate()
+    {
+        if(inputVec.x != 0)
+        {
+            spriter.flipX = inputVec.x > 0;
+        }
     }
 }

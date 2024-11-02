@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using PlayerInfoManager;
 public class useUltimate : MonoBehaviour
 {
     public int selectUltimate = 0;
@@ -12,20 +12,24 @@ public class useUltimate : MonoBehaviour
     {
         GameObject ultimateObject = GameObject.Find("ultimateBTN");
         Image buttonImage = ultimateObject.GetComponent<Image>();
-
         if (buttonImage != null && Ultimate.Length > selectUltimate)
         {
-            // 텍스처 할당
-            //buttonImage.sprite = Ultimate[selectUltimate];
-            Debug.Log(PassiveManager.Instance.SelectedPassive.imgSource);
-            Texture2D texture = Resources.Load<Texture2D>(PassiveManager.Instance.SelectedPassive.imgSource);
-
-            if (texture != null)
+            Debug.Log(PlayerManager.Instance.SelectedPassive.imgSource);
+            if (PlayerManager.Instance.SelectedPassive.imgSource == null|| PlayerManager.Instance.SelectedPassive.imgSource == "")
             {
-                // Texture2D를 Sprite로 변환
-                Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                Sprite newSprite = Resources.Load<Sprite>("Images/NotOpen");
                 buttonImage.sprite = newSprite;
             }
+            else
+            {
+                Texture2D texture = Resources.Load<Texture2D>(PlayerManager.Instance.SelectedPassive.imgSource);
+
+                Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                // 텍스처 할당
+                //buttonImage.sprite = Ultimate[selectUltimate];
+                buttonImage.sprite = newSprite;
+            }
+            
         }
         else
         {

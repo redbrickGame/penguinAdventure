@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PassiceInfoScript;
 namespace PlayerInfoManager
 {
     public struct PlayerInfo
     {
+        public string _name;
         public int _hp;
         public int _damage;
         public int _defense;
@@ -14,6 +16,7 @@ namespace PlayerInfoManager
     public class PlayerManager
     {
         public static PlayerManager instance;
+        public PassiveInfo SelectedPassive { get; set; }
         public PlayerInfo myPlayer;
         // Start is called before the first frame update
         public static PlayerManager Instance
@@ -28,6 +31,11 @@ namespace PlayerInfoManager
                 return instance;
             }
         }
+        private PlayerManager()
+        {
+            SelectedPassive = new PassiveInfo();
+            myPlayer = new PlayerInfo();
+        }
         public void InitializePlayer()
         {
             myPlayer._hp = 100;
@@ -35,6 +43,10 @@ namespace PlayerInfoManager
             myPlayer._defense = 10;
             myPlayer._moveSpeed = 10;
             myPlayer._money = 0;
+        }
+        public void InitializePassive()
+        {
+            SelectedPassive.imgSource = "";
         }
 
     }
