@@ -36,5 +36,6 @@ public class swingSardine : MonoBehaviour
 
         // 최종 각도로 정확하게 설정
         transform.rotation = Quaternion.Euler(0, 0, endAngle);
+        Destroy(gameObject);
     }
 }

@@ -570,6 +570,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69247993}
   m_CullTransparentMesh: 1
+--- !u!1 &74262581 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1840027557, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &95554835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2184,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519680145}
   m_CullTransparentMesh: 1
+--- !u!1 &529773740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1601508310, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620714868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +2692,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 725788409, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840027557, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5255548771924104690, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
@@ -4968,6 +4982,11 @@ MonoBehaviour:
     skillName: "\uAE30\uBCF8 \uC18D\uB3C4 \uC99D\uAC00"
     skillExplane: "\uAE30\uBCF8 \uC774\uB3D9\uC18D\uB3C4\uAC00 \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
   sprite: {fileID: 21300000, guid: b62962a3f67f16d4a902469ff1ed8b1c, type: 3}
+  Friendsview: {fileID: 2102838521}
+  sardineview: {fileID: 529773740}
+  IceStampView: {fileID: 1306255928}
+  IceZoneView: {fileID: 74262581}
+  LightSkillView: {fileID: 1733869921}
 --- !u!1001 &1150590209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5612,6 +5631,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304324006}
   m_CullTransparentMesh: 1
+--- !u!1 &1306255928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 704232319576854664, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1338105538
 GameObject:
   m_ObjectHideFlags: 0
@@ -7188,6 +7212,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714001365}
   m_CullTransparentMesh: 1
+--- !u!1 &1733869921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6436574119314118605, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1746123921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,3 +8133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SkillName: 
   level: 0
+--- !u!1 &2102838521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 798112904066493083, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}

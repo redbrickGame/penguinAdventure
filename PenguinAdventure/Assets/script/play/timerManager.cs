@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// [System.Serializable] // Unity Inspector에서 표시되도록 직렬화
+// public class skillView
+// {
+//     public Button skillBtn;
+//     public RawImage skillIcon;
+//     public TextMeshProUGUI skillName;
+//     public TextMeshProUGUI skillExplane;
+
+// }
 public class timerManager : MonoBehaviour
 {
     public int seconds = 30;
@@ -49,5 +58,9 @@ public class timerManager : MonoBehaviour
             StartCoroutine(Countdown());
 
         }
+    }
+    public void CreateMonster()
+    {
+
     }
 }

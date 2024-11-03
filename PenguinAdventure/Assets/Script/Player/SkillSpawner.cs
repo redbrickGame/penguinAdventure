@@ -25,14 +25,17 @@ public class SkillSpawner : MonoBehaviour
         timer += Time.deltaTime;
         totalTimer += Time.deltaTime;
 
-        if (timer > 0.5f)
+        if (timer > 0.5f && totalTimer < 3)
         {
             //소환
             timer = 0;
             Instantiate(sunParticle, spawnPoint[Random.Range(1, spawnPoint.Length)].position, Quaternion.identity);
-            if (totalTimer > 3)
-                gameObject.SetActive(false);
+
+
         }
+        if (totalTimer > 7)
+            totalTimer = 0;
+
 
     }
 }
