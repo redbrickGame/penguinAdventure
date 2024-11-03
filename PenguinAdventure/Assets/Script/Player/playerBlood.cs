@@ -2,6 +2,7 @@ using UnityEngine;
 using PlayerInfoManager;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class playerBlood : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class playerBlood : MonoBehaviour
         if (HPvalue <= 0)
         {
             gameoverView.SetActive(true);
+            GameObject.Find("scoreText").GetComponent<TextMeshProUGUI>().text = GameObject.Find("GameManage").GetComponent<timerManager>().sumExp.ToString();
+
         }
         Debug.Log("callDamage");
     }

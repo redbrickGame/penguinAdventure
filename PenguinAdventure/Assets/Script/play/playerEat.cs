@@ -14,11 +14,12 @@ public class playerEat : MonoBehaviour
         // 충돌한 오브젝트가 "sun" 태그를 가지고 있는지 확인
         if (other.CompareTag("Player"))
         {
-            Debug.Log("EATcndehf!!!TTTEnemyPlayer");
+            // Debug.Log("EATcndehf!!!TTTEnemyPlayer");
 
             GameObject.Find("experiencebarSlider").GetComponent<Slider>().value += experience;
-            if (clip != null)
-                clip.Play();
+            GameObject.Find("GameManage").GetComponent<timerManager>().sumex(experience);
+            // if (clip != null)
+            //     clip.Play();
             Destroy(gameObject);
             // other.GetComponent<playerBlood>().getDamage(Damage);
 
