@@ -8,6 +8,8 @@ public class useUltimate : MonoBehaviour
     public int selectUltimate = 0;
     public Sprite[] Ultimate;
     public GameObject ultimateDelayObject;
+    public GameObject penguin;
+    public RuntimeAnimatorController muzukPenguin;
     private void Start()
     {
         GameObject ultimateObject = GameObject.Find("ultimateBTN");
@@ -40,15 +42,23 @@ public class useUltimate : MonoBehaviour
     {
         if (ultimateDelayObject != null)
         {
+            Debug.Log("click");
             // 오브젝트가 존재할 때 수행할 작업
             ultimateDelayObject.SetActive(true);
            if(PlayerManager.Instance.SelectedPassive.title=="무적 효과")
             {
+                Debug.Log("무적발동");
+                RuntimeAnimatorController origin = penguin.GetComponent<Animator>().runtimeAnimatorController;
+                penguin.GetComponent<Rigidbody2D>().isKinematic = false;
+                penguin.GetComponent<CapsuleCollider2D>().enabled = false;
 
+                penguin.GetComponent<Animator>().runtimeAnimatorController = muzukPenguin;
+                StartCoroutine(MuzukrDelay(PlayerManager.Instance.SelectedPassive.nowLevel*1.5f, origin));
             }
             else if (PlayerManager.Instance.SelectedPassive.title == "스피드 향상")
             {
-
+                penguin.GetComponent<Player>().speed = (PlayerManager.Instance.SelectedPassive.nowLevel * 1.5f)/6;
+                StartCoroutine(AfterDelay(PlayerManager.Instance.SelectedPassive.nowLevel * 3f));
             }
             else if(PlayerManager.Instance.SelectedPassive.title == "체력 증가")
             {
@@ -65,5 +75,18 @@ public class useUltimate : MonoBehaviour
             // 오브젝트가 존재하지 않을 때
             Debug.LogWarning("GameObject with the name 'ultimateDelay' was not found.");
         }
+    }
+    private IEnumerator AfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        penguin.GetComponent<Player>().speed = PlayerManager.Instance.myPlayer._moveSpeed / 50;
+    }
+    private IEnumerator MuzukrDelay(float delay, RuntimeAnimatorController origin)
+    {
+        yield return new WaitForSeconds(delay);
+        penguin.GetComponent<Animator>().runtimeAnimatorController = origin;
+        penguin.GetComponent<Rigidbody2D>().isKinematic = true;
+        penguin.GetComponent<CapsuleCollider2D>().enabled = true;
+
     }
 }

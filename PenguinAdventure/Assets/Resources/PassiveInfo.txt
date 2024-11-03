@@ -2,7 +2,7 @@
     {
         "title": "무적 효과",
         "discription": "1초 동안 모든 공격에 면역 상태가 된다.",
-        "nowLevel": 0,
+        "nowLevel": 1,
         "limitLevel": 5,
         "imgSource": "Images/invincibility"
     },

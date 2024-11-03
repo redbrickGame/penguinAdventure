@@ -424,7 +424,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 56910830, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
   m_PrefabInstance: {fileID: 704022621}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 704022622}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c250d5e94a34ec4085f85618f91c9c7, type: 3}
@@ -2736,8 +2736,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5524311262579337655, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9390c27ee2f85004da54f3dd71fed10d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+--- !u!1 &704022622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5524311262579337640, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,7 +4340,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4861,6 +4870,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8a99e92c819fde846b5253b70d1f2dd5, type: 3}
   - {fileID: 21300000, guid: bf744d9d3f72bed4e83a4e23b267aa74, type: 3}
   ultimateDelayObject: {fileID: 203908424}
+  penguin: {fileID: 704022622}
+  muzukPenguin: {fileID: 9100000, guid: 658e2f822224c7c42b8561c915080b41, type: 2}
 --- !u!114 &1122776074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6783,6 +6794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1683110960}
   - component: {fileID: 1683110959}
+  - component: {fileID: 1683110961}
   m_Layer: 0
   m_Name: playground
   m_TagString: Untagged
@@ -6863,6 +6875,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1683110961
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683110958}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: eceeef72686983341a63c91c5f1f3acc, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1688014526
 GameObject:
   m_ObjectHideFlags: 0
@@ -7193,7 +7301,7 @@ MonoBehaviour:
   m_Follow: {fileID: 56910831}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 8
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0

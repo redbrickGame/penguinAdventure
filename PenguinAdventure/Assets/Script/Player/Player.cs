@@ -6,13 +6,14 @@ public class Player : MonoBehaviour
 {
     public Vector2 inputVec;
     Rigidbody2D rigid;
-    public float speed = 1;
+    public float speed;
     SpriteRenderer spriter;
     // Start is called before the first frame update
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriter = GetComponent<SpriteRenderer>();
+        speed = PlayerManager.Instance.myPlayer._moveSpeed/50;
     }
 
     // Update is called once per frame

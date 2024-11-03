@@ -20,6 +20,8 @@ public class randomUltimate : MonoBehaviour
         {
             // 텍스처 할당
             // rawImage.texture = Ultimate[selectUltimate];
+            Debug.Log(PlayerManager.Instance.passiveList);
+            Debug.Log(length);
             string imagePath = PlayerManager.Instance.passiveList[randomNumber].imgSource;
             Texture2D texture = Resources.Load<Texture2D>(imagePath);
             rawImage.texture = texture;

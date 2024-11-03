@@ -9,6 +9,6 @@ public class NextScene : MonoBehaviour
     {
         //pane.SetActive(false);
         //pane.alpha = 0f;
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("playScene_sy");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("playScene");
     }
 }

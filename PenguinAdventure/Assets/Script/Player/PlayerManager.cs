@@ -10,7 +10,7 @@ namespace PlayerInfoManager
         public int _hp;
         public int _damage;
         public int _defense;
-        public int _moveSpeed;
+        public float _moveSpeed;
         public int _money;
     }
     public class PlayerManager
@@ -40,7 +40,7 @@ namespace PlayerInfoManager
         }
         public void InitializePlayer()
         {
-            myPlayer._hp = 100;
+            myPlayer._hp = 50;
             myPlayer._damage = 10;
             myPlayer._defense = 10;
             myPlayer._moveSpeed = 10;
