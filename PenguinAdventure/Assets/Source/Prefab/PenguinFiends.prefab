@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1334912759401580145}
   - component: {fileID: 5319743208123530098}
   - component: {fileID: 1906140871307701445}
+  - component: {fileID: -4390039911984331828}
   m_Layer: 0
   m_Name: PenguinFiends
   m_TagString: skillEfe
@@ -169,3 +170,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playTime: 3
+--- !u!114 &-4390039911984331828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6922737444606995279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5660e68752fe147af0b07fd65ea031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

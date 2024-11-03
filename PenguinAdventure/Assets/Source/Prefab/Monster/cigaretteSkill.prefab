@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8342785657718723970}
   - component: {fileID: 4453008165826555626}
   - component: {fileID: -4521968633685946541}
+  - component: {fileID: 2430013875442674169}
   m_Layer: 0
   m_Name: cigaretteSkill
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8d1ef1e49469447a8cc88f599b6d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2430013875442674169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342785657718723973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6448700157dcea42920e89386d6e666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playTime: 5

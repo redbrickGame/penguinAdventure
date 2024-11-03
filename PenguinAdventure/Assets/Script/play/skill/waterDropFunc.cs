@@ -13,24 +13,11 @@ public class waterDropFunc : MonoBehaviour
 
     private bool isFiring = false;          // 발사 상태 플래그
     private Coroutine fireCoroutine;
-    void Update()
+    void Start()
     {
-        // 스페이스바를 누르면 발사 상태를 토글
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isFiring)
-            {
-                // 발사 중이면 코루틴 중지
-                StopCoroutine(fireCoroutine);
-                isFiring = false;
-            }
-            else
-            {
-                // 발사 중이 아니면 코루틴 시작
-                fireCoroutine = StartCoroutine(FireSpreadAttack());
-                isFiring = true;
-            }
-        }
+        // 발사 중이 아니면 코루틴 시작
+        fireCoroutine = StartCoroutine(FireSpreadAttack());
+        // isFiring = true;
     }
     IEnumerator FireSpreadAttack()
     {
@@ -44,7 +31,8 @@ public class waterDropFunc : MonoBehaviour
     {
         // 원형으로 발사할 각도 계산
         float angleStep = 360f / numberOfBullets;
-        float angle = 0f;
+
+        float angle = gameObject.GetComponent<SpriteRenderer>().flipX ? 0f : 180f;
 
         for (int i = 0; i < numberOfBullets; i++)
         {

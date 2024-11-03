@@ -10,7 +10,7 @@ public class randomUltimate : MonoBehaviour
     private void OnEnable()
     {
         int length = PlayerManager.Instance.passiveList.Count;
-        int randomNumber = Random.Range(0, length-1);
+        int randomNumber = Random.Range(0, length - 1);
         selectUltimate = randomNumber;
         GameObject ultimateObject = GameObject.Find("getultimateIcon");
         // ultimateObject에서 RawImage 컴포넌트를 가져오기
@@ -25,7 +25,7 @@ public class randomUltimate : MonoBehaviour
             rawImage.texture = texture;
             PlayerManager.Instance.passiveList[randomNumber].nowLevel += 1;
             //GameObject a = GameObject.Find(PlayerManager.Instance.passiveList[randomNumber].title);
-           // a.GetComponent<Passive>().ImageSet(true);
+            // a.GetComponent<Passive>().ImageSet(true);
             //a.GetComponent<Passive>().BtnIsActive(true);
         }
         else

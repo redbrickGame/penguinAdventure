@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 8959879928421080731}
   - component: {fileID: 8959879928421080730}
   - component: {fileID: 1847858039276108651}
+  - component: {fileID: 5866029112405991811}
+  - component: {fileID: 2823662956153588297}
   m_Layer: 0
   m_Name: FactorySkill
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,3 +135,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5866029112405991811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959879928421080733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6448700157dcea42920e89386d6e666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playTime: 5
+--- !u!114 &2823662956153588297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959879928421080733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8d1ef1e49469447a8cc88f599b6d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
