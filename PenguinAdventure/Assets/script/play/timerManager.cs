@@ -4,17 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// [System.Serializable] // Unity Inspector에서 표시되도록 직렬화
-// public class skillView
-// {
-//     public Button skillBtn;
-//     public RawImage skillIcon;
-//     public TextMeshProUGUI skillName;
-//     public TextMeshProUGUI skillExplane;
 
-// }
 public class timerManager : MonoBehaviour
 {
+    public float sumExp = 0;
     public int seconds = 30;
     public TextMeshProUGUI timerText; // 변경할 TMP 텍스트를 할당할 변수
     public TextMeshProUGUI waveText; // 변경할 TMP 텍스트를 할당할 변수
@@ -54,13 +47,25 @@ public class timerManager : MonoBehaviour
         {
             level++;
             waveText.text = "WAVE " + level; // 텍스트 변경
-            seconds = 30;
+            seconds = 5;
             StartCoroutine(Countdown());
+            if (level % 4 == 0)
+            {
+                GameObject.Find("bossMopSpawner").GetComponent<bossSpawn>().spawn(level / 4 - 1);
+            }
+            else
+            {
+                GameObject.Find("MonsterSpawner").GetComponent<WaveMonsterSpawn>().spawn(level - 1);
 
+            }
         }
     }
     public void CreateMonster()
     {
 
+    }
+    public void sumex(float ex)
+    {
+        sumExp += ex;
     }
 }

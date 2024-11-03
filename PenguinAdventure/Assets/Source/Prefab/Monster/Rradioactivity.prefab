@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2403816446864998590}
   - component: {fileID: 2403816446864998578}
   - component: {fileID: -8362914021222407885}
+  - component: {fileID: 6841376443616691672}
+  - component: {fileID: 745454939051663713}
   m_Layer: 0
   m_Name: Rradioactivity
   m_TagString: Enemy
@@ -119,7 +121,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -152,6 +154,7 @@ MonoBehaviour:
   bulletSpeed: 10
   numberOfBullets: 10
   fireRate: 1
+  friendsCk: 0
 --- !u!114 &-8362914021222407885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +171,38 @@ MonoBehaviour:
   Blood: 100
   ExperienceCapacity: 20
   experienceObj: {fileID: 1833253032396455722, guid: fe3e8f91ce88af645a95232b153a17de, type: 3}
+--- !u!114 &6841376443616691672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403816446864998585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59cddc45376fc2459418bbd1e5c2016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  target: {fileID: 0}
+--- !u!50 &745454939051663713
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403816446864998585}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
