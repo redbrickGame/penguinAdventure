@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1652143759095011289, guid: e2c1ac940434a5242b54d72b66654687, type: 3}
       propertyPath: m_Name
-      value: CFXR2 Shiny Item (Loop) (2)
+      value: RealIcezone
       objectReference: {fileID: 0}
     - target: {fileID: 1652143759095011302, guid: e2c1ac940434a5242b54d72b66654687, type: 3}
       propertyPath: m_RootOrder
@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1652143759095011302, guid: e2c1ac940434a5242b54d72b66654687, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652143759095011302, guid: e2c1ac940434a5242b54d72b66654687, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1652143759095011302, guid: e2c1ac940434a5242b54d72b66654687, type: 3}
       propertyPath: m_LocalPosition.z
@@ -102,3 +102,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ece72a584b387489719248c3993996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damae: 20

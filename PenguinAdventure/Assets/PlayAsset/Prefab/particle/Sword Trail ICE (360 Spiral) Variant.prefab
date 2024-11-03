@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 540632651, guid: 69d8f05fda8421849a84b27b8c0d773d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3555997207373312534, guid: 69d8f05fda8421849a84b27b8c0d773d, type: 3}
       propertyPath: m_Intensity
       value: 0
@@ -87,7 +91,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 477961340255923682, guid: 7055089abec6652439c6a1968239fe63, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.9
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 477961340255923682, guid: 7055089abec6652439c6a1968239fe63, type: 3}
       propertyPath: m_LocalRotation.w

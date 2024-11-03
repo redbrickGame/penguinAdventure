@@ -10,7 +10,7 @@ public class waterDropFunc : MonoBehaviour
     public int numberOfBullets = 8;         // 발사할 총알 수 (원 형태로 퍼지는)
     public float fireRate = 1f;             // 공격 간격 (초 단위)
 
-
+    public bool friendsCk = false;
     private bool isFiring = false;          // 발사 상태 플래그
     private Coroutine fireCoroutine;
     void Start()
@@ -19,6 +19,8 @@ public class waterDropFunc : MonoBehaviour
         fireCoroutine = StartCoroutine(FireSpreadAttack());
         // isFiring = true;
     }
+
+
     IEnumerator FireSpreadAttack()
     {
         while (true)

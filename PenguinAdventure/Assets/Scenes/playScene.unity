@@ -2179,6 +2179,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519680145}
   m_CullTransparentMesh: 1
+--- !u!1 &526433400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6436574119314118605, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620714868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2195,7 @@ GameObject:
   - component: {fileID: 620714869}
   - component: {fileID: 620714870}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: experiencebarSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2684,6 +2689,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1840027557, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840027559, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4477136108402635366, guid: 7f18a2cede7f6d041a4a2673abefc8b8, type: 3}
     - target: {fileID: 5255548771924104690, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
       propertyPath: gameoverView
       value: 
@@ -4957,6 +4970,11 @@ MonoBehaviour:
     skillName: "\uAE30\uBCF8 \uC18D\uB3C4 \uC99D\uAC00"
     skillExplane: "\uAE30\uBCF8 \uC774\uB3D9\uC18D\uB3C4\uAC00 \uC18C\uD3ED \uC99D\uAC00\uD55C\uB2E4."
   sprite: {fileID: 21300000, guid: b62962a3f67f16d4a902469ff1ed8b1c, type: 3}
+  Friendsview: {fileID: 1951983682}
+  sardineview: {fileID: 1601508310}
+  IceStampView: {fileID: 1536627864}
+  IceZoneView: {fileID: 1840027557}
+  LightSkillView: {fileID: 526433400}
 --- !u!1001 &1150590209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6257,6 +6275,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527296428}
   m_CullTransparentMesh: 1
+--- !u!1 &1536627864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 704232319576854664, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1551271147
 GameObject:
   m_ObjectHideFlags: 0
@@ -6528,6 +6551,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600932535}
   m_CullTransparentMesh: 1
+--- !u!1 &1601508310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1601508310, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1614029139
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,6 +7337,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1840027557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1840027557, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1850533678 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7157261941828111184, guid: 913d13fdfd29c68468f75dd882d175be, type: 3}
@@ -7667,6 +7700,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927301620}
   m_CullTransparentMesh: 1
+--- !u!1 &1951983682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 798112904066493083, guid: 68080b4edec48f74da5b83773bb1e7ad, type: 3}
+  m_PrefabInstance: {fileID: 704022621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2004335617
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ public class sardineSkill : MonoBehaviour
     }
     void Fire()
     {
-        Instantiate(bulletPrefab, gameObject.transform.position, Quaternion.identity);
-
+        GameObject sardine = Instantiate(bulletPrefab, gameObject.transform.position, Quaternion.identity);
+        sardine.transform.SetParent(gameObject.transform);
     }
 }

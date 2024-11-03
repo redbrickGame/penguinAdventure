@@ -34,7 +34,7 @@ public class firensSkill : MonoBehaviour
         timer += Time.deltaTime;
         totalTimer += Time.deltaTime;
 
-        if (timer > 0.8f)
+        if (timer > 0.8f && totalTimer < 3)
         {
             direct = -1;
             GameObject friendPenguin;
@@ -52,10 +52,10 @@ public class firensSkill : MonoBehaviour
 
             //소환
             timer = 0;
-            if (totalTimer > 3)
-                gameObject.SetActive(false);
-        }
 
+        }
+        if (totalTimer > 6)
+            totalTimer = 0;
     }
     public void PlaySkill()
     {

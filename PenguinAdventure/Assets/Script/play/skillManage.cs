@@ -59,6 +59,12 @@ public class skillManage : MonoBehaviour
     List<inputSkill> skillList_select = new List<inputSkill>();
     bool Once = false;
 
+    public GameObject Friendsview;
+    public GameObject sardineview;
+    public GameObject IceStampView;
+    public GameObject IceZoneView;
+    public GameObject LightSkillView;
+
     private void Awake()
     {
         skillList_select = skillItems;
@@ -148,6 +154,13 @@ public class skillManage : MonoBehaviour
                 {
                     GameObject.Find("FriendsSkillSpawner").GetComponent<firensSkill>().speed += 1;
                 }
+
+                if (skill.skillName == "'ICE ZONE' 이라는 것이다")
+                {
+                    // IceZoneView.SetActive(true);
+                    IceZoneView.transform.localScale *= 1.2f;
+                    // IceStampView.GetComponent<firensSkill>().speed += 1;
+                }
                 if (skill.SkillLevel == 5)
                 {
                     //삭제하는거 다시 만들기
@@ -177,7 +190,31 @@ public class skillManage : MonoBehaviour
 
                 if (skill.skillName == "친구야 도와줘!")
                 {
-                    GameObject.Find("FriendsSkillSpawner").GetComponent<firensSkill>().speed += 1;
+                    Friendsview.SetActive(true);
+                    Friendsview.GetComponent<firensSkill>().speed += 1;
+                }
+
+                if (skill.skillName == "정어리 공격!")
+                {
+                    sardineview.SetActive(true);
+                    // sardineview.GetComponent<firensSkill>().speed += 1;
+                }
+                if (skill.skillName == "얼음도장 쾅!")
+                {
+                    IceStampView.SetActive(true);
+                    // IceStampView.GetComponent<firensSkill>().speed += 1;
+                }
+                if (skill.skillName == "'ICE ZONE' 이라는 것이다")
+                {
+                    IceZoneView.SetActive(true);
+                    // IceZoneView.transform.localScale *= 1.2f;
+                    // IceStampView.GetComponent<firensSkill>().speed += 1;
+                }
+                if (skill.skillName == "태양광 에너지")
+                {
+                    LightSkillView.SetActive(true);
+                    // IceZoneView.transform.localScale *= 1.2f;
+                    // IceStampView.GetComponent<firensSkill>().speed += 1;
                 }
 
                 selectMySkill.Add(skill.skillName);
