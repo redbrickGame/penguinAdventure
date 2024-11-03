@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Passive : MonoBehaviour
 {
     // Start is called before the first frame update
-   
-    PassiveInfo thisPassiveInfo;
+
+    [SerializeField] PassiveInfo thisPassiveInfo;
     public void SetData(PassiveInfo passiveData)
     {
         thisPassiveInfo = passiveData;
@@ -25,8 +25,15 @@ public class Passive : MonoBehaviour
         }
 
     }
+
+
     public void ClickPassive()
     {
+        if (thisPassiveInfo.nowLevel > 0)
+        {
+            BtnIsActive(true);
+            ImageSet(true);
+        }
         PassiveManager.Instance.SetSelectedPassive(thisPassiveInfo);
     }
     public void BtnIsActive(bool isActive)

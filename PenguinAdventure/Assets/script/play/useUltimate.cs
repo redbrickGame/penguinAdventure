@@ -14,7 +14,6 @@ public class useUltimate : MonoBehaviour
         Image buttonImage = ultimateObject.GetComponent<Image>();
         if (buttonImage != null && Ultimate.Length > selectUltimate)
         {
-            Debug.Log(PlayerManager.Instance.SelectedPassive.imgSource);
             if (PlayerManager.Instance.SelectedPassive.imgSource == null|| PlayerManager.Instance.SelectedPassive.imgSource == "")
             {
                 Sprite newSprite = Resources.Load<Sprite>("Images/NotOpen");
@@ -43,6 +42,22 @@ public class useUltimate : MonoBehaviour
         {
             // 오브젝트가 존재할 때 수행할 작업
             ultimateDelayObject.SetActive(true);
+           if(PlayerManager.Instance.SelectedPassive.title=="무적 효과")
+            {
+
+            }
+            else if (PlayerManager.Instance.SelectedPassive.title == "스피드 향상")
+            {
+
+            }
+            else if(PlayerManager.Instance.SelectedPassive.title == "체력 증가")
+            {
+
+            }
+            else if(PlayerManager.Instance.SelectedPassive.title == "북극곰아 도와줘")
+            {
+
+            }
             Debug.Log("Found the ultimateDelay GameObject!");
         }
         else

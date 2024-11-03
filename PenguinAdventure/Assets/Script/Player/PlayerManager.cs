@@ -17,6 +17,7 @@ namespace PlayerInfoManager
     {
         public static PlayerManager instance;
         public PassiveInfo SelectedPassive { get; set; }
+        public List<PassiveInfo> passiveList { get; set; }
         public PlayerInfo myPlayer;
         // Start is called before the first frame update
         public static PlayerManager Instance
@@ -26,6 +27,7 @@ namespace PlayerInfoManager
                 if(instance == null)
                 {
                     instance = new PlayerManager();
+                    Instance.passiveList = new List<PassiveInfo>();
 
                 }
                 return instance;

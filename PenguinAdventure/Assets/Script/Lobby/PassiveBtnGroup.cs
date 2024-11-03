@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using PassiceInfoScript;
+using PlayerInfoManager;
 public class PassiveBtnGroup : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -13,7 +14,6 @@ public class PassiveBtnGroup : MonoBehaviour
 
     public void GenerateButtons()
     {
-        LoadSettings();
 
         // 기존 버튼이 있으면 모두 삭제
         for (int i = panel.transform.childCount - 1; i >= 0; i--)
@@ -22,7 +22,7 @@ public class PassiveBtnGroup : MonoBehaviour
         }
 
         // passiveList에서 각 능력 데이터를 버튼에 설정
-        foreach (var ability in passiveList)
+        foreach (var ability in PlayerManager.Instance.passiveList)
         {
             GameObject newButton = Instantiate(buttonPrefab, panel.transform);
             newButton.name = ability.title;
@@ -51,7 +51,7 @@ public class PassiveBtnGroup : MonoBehaviour
 
             if (abilitiesArray != null)
             {
-                passiveList.AddRange(abilitiesArray);
+                PlayerManager.Instance.passiveList.AddRange(abilitiesArray);
             }
             else
             {
@@ -75,8 +75,4 @@ public class PassiveBtnGroup : MonoBehaviour
         public PassiveInfo[] passives;
     }
 
-    private void OnPassiveButtonClick(PassiveInfo clickedPassive)
-    {
-       // PassiveManager.Instance.SetSelectedPassive(clickedPassive);
-    }
 }

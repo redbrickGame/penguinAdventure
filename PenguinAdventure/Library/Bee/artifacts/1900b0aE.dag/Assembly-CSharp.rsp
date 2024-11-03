@@ -362,6 +362,7 @@
 "Assets/Script/Lobby/PassiveBtnGroup.cs"
 "Assets/Script/Lobby/PassiveInfo.cs"
 "Assets/Script/Lobby/PassiveManager.cs"
+"Assets/Script/Lobby/PassiveUISetting.cs"
 "Assets/Script/Lobby/RankingBtn.cs"
 "Assets/Script/Lobby/RightButtonGroup.cs"
 "Assets/Script/Login/GoNextScene.cs"
