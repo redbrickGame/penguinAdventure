@@ -47,7 +47,7 @@ public class timerManager : MonoBehaviour
         {
             level++;
             waveText.text = "WAVE " + level; // 텍스트 변경
-            seconds = 5;
+            seconds = 30;
             StartCoroutine(Countdown());
             if (level % 4 == 0)
             {

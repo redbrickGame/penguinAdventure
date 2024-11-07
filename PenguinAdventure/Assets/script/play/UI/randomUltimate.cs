@@ -9,6 +9,8 @@ public class randomUltimate : MonoBehaviour
     public int selectUltimate; // 선택할 텍스처 인덱스
     private void OnEnable()
     {
+        Time.timeScale = 0f;       // 게임 일시 정지
+
         int length = PlayerManager.Instance.passiveList.Count;
         int randomNumber = Random.Range(0, length - 1);
         selectUltimate = randomNumber;
